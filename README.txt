@@ -1,5 +1,10 @@
+#  MMB-by-MMB Algorithm
+
+
 MMB_by_MMB.py
-Main Function: MMB_by_MMB(Data, target, alpha, p, maxK, verbose = False)
+
+## **Main Function**
+MMB_by_MMB(Data, target, alpha, p, maxK, verbose = False)
 
 # Input arguments:
 # Data: data observation, datatype: ndarray
@@ -20,3 +25,11 @@ numpy
 math
 scipy
 itertools
+
+### CITATION
+
+If you use this code, please cite the following paper:
+
+Feng Xie, Zheng Li, Peng Wu, Yan Zeng, Chunchen Liu, and Zhi Geng. Local Causal Structure Learning in the Presence of Latent Variables. The Forty-first International Conference on Machine Learning (ICML), Vienna, Austria, 2024.
+
+If you have problems or questions, do not hesitate to send an email to xiefeng009@gmail.com or zhengli0060@gmail.com.
