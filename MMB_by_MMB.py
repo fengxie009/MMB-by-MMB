@@ -113,9 +113,9 @@ class MMB_by_MMB:
 
         if depth > maxdepth:
             return False
-        if done is None:
-            done = []
-        done.append(T)
+        if done is None and depth == 1:
+            done = list(np.where((self.pag[T, :] != 2) & (self.pag[:, T] != 2) & (self.pag[T, :] != 0) & (self.pag[:, T] != 0))[0])
+        if T not in done: done.append(T)
         adj_T = np.where(self.pag[T, :] != 0)[0]
         adj_T = np.setdiff1d(adj_T, done)
         adj_T = list(adj_T)
